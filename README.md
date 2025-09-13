@@ -1,8 +1,6 @@
 <div align="center">
 
-# AURA: YCbCr-Based Universal RAW-Reconstruction 
-
-# for Inverse ISP
+# AURA: YCbCr-Based Universal RAW-Reconstruction for Inverse ISP
 
  
 
