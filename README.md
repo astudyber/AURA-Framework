@@ -86,15 +86,3 @@ python rgb2ycc.py # Please ensure that your path is correct
 ```cmd
 python inference.py --folder test/ --output results/
 ```
-
-
-
-
-
-
-
-
-
- :rocket:
-
-  :dart: 
