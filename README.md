@@ -86,3 +86,21 @@ python rgb2ycc.py # Please ensure that your path is correct
 ```cmd
 python inference.py --folder test/ --output results/
 ```
+
+
+
+
+
+## 📧 Connecting with Us
+
+
+
+If you have any questions, please feel free to send email to `hzcheng@chd.edu.cn`
+
+
+
+## 📜 Acknowledgment
+
+
+
+ This project is inspired by 《**Digital Video and HD: Algorithms and Interfaces**》. 
