@@ -30,23 +30,6 @@ This is the official repository for **AURA**.
 
 ![Diagram of the AURA Framework](./img/1.jpg)
 
-* 🚩  We introduce a **noise-aware composite loss** enforcing stronger constraints on difficult regions for higher-fidelity RAW reconstruction. 
-
-$$
-
-L_{total} = \lambda_{rec} L_{rec} + \lambda_{str} L_{str} + \lambda_{perc} L_{perc}\\
-
-L_{rec} = \frac{1}{N}\sum_{i=1}^{N} |x_i - y_i| + \lambda_{hlog} L_{HLog}\\
-
-L_{HLog} = \frac{1}{N}\sum_{i=1}^{N} -\log(1 - \min(|x_i - y_i|, 1) + \epsilon)\\
-
-L_{str} = 1 - \text{SSIM}(X, Y)\\
-
-L_{perc} = \text{LPIPS}(X, Y)
-$$
-
-* where the trade-off weights $\lambda_{rec}$, $\lambda_{str}$, $\lambda_{perc}$, and $\lambda_{hlog}$ are empirically set to 1.0, 0.1, 0.1, and 0.05, respectively.
-
 
 
 
