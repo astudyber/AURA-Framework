@@ -259,9 +259,9 @@ class DoubleConv(nn.Module):
         x = self.cam(x)
         return x
 
-class UNet(nn.Module):
+class TransUNet(nn.Module):
     def __init__(self, enc_chs, dec_chs, out_ch, out_sz):
-        super(UNet, self).__init__()
+        super(TransUNet, self).__init__()
         self.enc_chs = enc_chs
         self.dec_chs = dec_chs
         self.out_ch = out_ch
@@ -318,13 +318,13 @@ class CFG:
     lr_decay = 2e-6
     epochs = 100
     loss = nn.MSELoss()
-    name = 'unet-rev-isp.pt'
+    name = 'TransUNet-rev-isp.pt'
     out_dir = './out3'
     save_freq = 1
 
 
 
-model = UNet(enc_chs=CFG.encoder, dec_chs=CFG.decoder, out_ch=CFG.out_ch, out_sz=CFG.out_sz)
+model = TransUNet(enc_chs=CFG.encoder, dec_chs=CFG.decoder, out_ch=CFG.out_ch, out_sz=CFG.out_sz)
 # 加载权重文件
 # pretrained_weights_path = "./137.pt"
 # model = torch.load(pretrained_weights_path, map_location=device, weights_only=False)

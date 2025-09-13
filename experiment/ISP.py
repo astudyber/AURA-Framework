@@ -324,7 +324,7 @@ class Decoder(nn.Module):
             x = self.dec_blocks[i](x)
         return x
 
-class UNet(nn.Module):
+class ISP(nn.Module):
     def __init__(self, enc_chs=(3, 64, 128, 256), dec_chs=(256, 128, 64), out_ch=4, out_sz=(512, 512)):
         super().__init__()
         self.encoder = Encoder(enc_chs)
@@ -353,13 +353,13 @@ class CFG:
     lr_decay = 2e-6
     epochs = 100
     loss = nn.MSELoss()
-    name = 'unet-rev-isp.pt'
+    name = 'ISP-rev-isp.pt'
     out_dir = './out'
     save_freq = 1
 
 
 
-model = UNet(enc_chs=CFG.encoder, dec_chs=CFG.decoder, out_ch=CFG.out_ch, out_sz=CFG.out_sz)
+model = ISP(enc_chs=CFG.encoder, dec_chs=CFG.decoder, out_ch=CFG.out_ch, out_sz=CFG.out_sz)
 # 加载权重文件
 pretrained_weights_path = "./out/200.pt"
 model = torch.load(pretrained_weights_path, map_location=device, weights_only=False)
