@@ -5,7 +5,7 @@ from torch.utils.data import DataLoader
 from torch.utils.data import Dataset
 from torchvision import transforms
 from torch.optim import Adam
-
+ 
 class Spatial(nn.Module):
     def __init__(self, kernel_size=7):
         super(Spatial, self).__init__()
