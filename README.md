@@ -20,7 +20,7 @@ This is the official repository for **AURA**.
 
 
 
-## :bulb:Learning features in YCbCr​  color space
+## :bulb: Inverse ISP in YCbCr  color space
 
 * 🚩  We propose AURA, a parameter-agnostic inverse ISP framework leveraging **YCbCr** perceptual decoupling for cross-device generalization. 
 
@@ -75,8 +75,20 @@ pip install -r requirements.txt
 
 
 
+##  :clipboard: Dataset Preparation
+
+* **RGB2RAW**: iPhoneX, SamsungS9, Samsung21[download](https://huggingface.co/datasets/marcosv/rgb2raw).These images are taken from different scenes captured by the iPhone X, Samsung S9, and Samsung 21 cameras. This dataset consists of 2952 pairs of ultra-high resolution images used for model training and a validation set of 120 pairs of images.
+
+* **RAW-NOD**: Sony RX100 VII and Nikon D750 [download](https://github.com/igor-morawski/RAW-NOD).A high-quality dataset collected by professional DSLR cameras Sony RX100 VII and Nikon D750, containing 7K RAW sRGB image pairs.
+
+* **ETH Huawei P20**: 《Replacing Mobile Camera ISP with a Single Deep Learning Model》[link](https://people.ee.ethz.ch/~%cb%9cihnatova/pynet.html).Contains RAW sRGB image pairs captured by Huawei P20 smartphones, covering complex scenes such as indoor and outdoor, high and low light, dynamic blur, etc., with a unified resolution of 3024 × 4032.
+
+
+
 ##  :white_check_mark: How to Run
 
+* Firstly, use our code to convert sRGB to YCbCr.
+* Please download the dataset in advance and modify the relative paths in the code.
 * Please prepare an environment such as pytorch in advance. You can use the following commands for inference: 
 
 ```cmd
@@ -92,7 +104,5 @@ python inference.py --folder test/ --output results/
 
 
  :rocket:
-
- :clipboard: 
 
   :dart: 
