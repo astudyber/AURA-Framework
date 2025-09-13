@@ -103,4 +103,4 @@ If you have any questions, please feel free to send email to `hzcheng@chd.edu.cn
 
 
 
- This project is inspired by 《**Digital Video and HD: Algorithms and Interfaces**》. 
+ This project is inspired by *Digital Video and HD: Algorithms and Interfaces*, *Deep Learning*( The Flower Book ), *Linear Algebra Done Right*, etc. 
