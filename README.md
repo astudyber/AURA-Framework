@@ -25,6 +25,7 @@ This is the official repository for **AURA**.
 * 🚩  We propose AURA, a parameter-agnostic inverse ISP framework leveraging **YCbCr** perceptual decoupling for cross-device generalization. 
 
 * 🚩  We design a **CSP module** performing multi-dimensional residual fusion to recover lost ISP details. 
+* 🚩  We introduce a **noise-aware composite loss** enforcing stronger constraints on difficult regions for higher-fidelity RAW reconstruction. 
 
 
 
@@ -71,6 +72,14 @@ pip install -r requirements.txt
 ##  :white_check_mark: How to Run
 
 * Firstly, use our code to convert sRGB to YCbCr.
+
+```python
+cd YCrCb/code
+python rgb2ycc.py # Please ensure that your path is correct
+```
+
+
+
 * Please download the dataset in advance and modify the relative paths in the code.
 * Please prepare an environment such as pytorch in advance. You can use the following commands for inference: 
 
