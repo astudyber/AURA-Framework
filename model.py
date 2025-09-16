@@ -5,6 +5,7 @@ from torch.utils.data import DataLoader
 from torch.utils.data import Dataset
 from torchvision import transforms
 from torch.optim import Adam
+from Loss import NoiseAwareCompositeLoss
  
 class Spatial(nn.Module):
     def __init__(self, kernel_size=7):
@@ -127,7 +128,7 @@ class Configs:
     lr      = 8e-5
     lr_decay= 1e-6
     epochs  = 100
-    loss    = nn.MSELoss()
-    name    = 'bast.pt'
+    loss    = NoiseAwareCompositeLoss()
+    name    = 'model.pt'
     out_dir = './out5'
     save_freq = 1
