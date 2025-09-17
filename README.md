@@ -37,7 +37,7 @@ This is the official repository for **AURA**.
 ##  :hourglass: Environment
 
 * We use python==3.10 and pytorch >= 2.5.1  with CUDA version 12.4
-* Running in a NVIDIA GeForce RTX 3080 GPU
+* Training with NVIDIA GeForce RTX 3080 GPU is sufficient.
 * Create environment:
 
 ```python
