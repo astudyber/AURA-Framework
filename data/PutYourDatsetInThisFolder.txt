@@ -3,5 +3,5 @@
  % Dataset 2 Download: https://github.com/igor-morawski/RAW-NOD
  % RAW-NOD: Sony RX100 VII and Nikon D750 7K
  % Dataset 3 Downloads: https://people.ee.ethz.ch/  ~%cb%9cihnatova/pynet.html
-Huawei P20: Replacing Mobile Camera ISP with a Single Deep Learning Model
+ % Huawei P20: Replacing Mobile Camera ISP with a Single Deep Learning Model
  %

@@ -90,6 +90,16 @@ python inference.py --folder test/ --output results/
 
 
 
+* Quickly run to see the effect of Denoise Net:
+
+```
+python ./Experiment/Denoise/clear.py
+```
+
+
+
+
+
 
 
 ## 📧 Connecting with Us
