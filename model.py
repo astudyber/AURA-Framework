@@ -128,7 +128,7 @@ class Configs:
     lr      = 8e-5
     lr_decay= 1e-6
     epochs  = 100
-    loss    = NoiseAwareCompositeLoss()
+    loss    = nn.MSELoss()
     name    = 'model.pt'
     out_dir = './out5'
     save_freq = 1

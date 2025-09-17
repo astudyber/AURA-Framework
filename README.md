@@ -74,7 +74,7 @@ pip install -r requirements.txt
 * Firstly, use our code to convert sRGB to YCbCr.
 
 ```python
-cd YCrCb/code
+cd YCbCr/code
 python rgb2ycc.py # Please ensure that your path is correct
 ```
 
@@ -84,6 +84,7 @@ python rgb2ycc.py # Please ensure that your path is correct
 * Please prepare an environment such as pytorch in advance. You can use the following commands for inference: 
 
 ```cmd
+cd ../../
 python inference.py --folder test/ --output results/
 ```
 

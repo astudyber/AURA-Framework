@@ -64,4 +64,4 @@ if __name__ == '__main__':
             np.save(SUBMISSION_PATH + real_name + '.npy', recon_raw)
             cnt += 1
 
-    print(np.mean(runtime))
+    print("\033[92m  ✅  Average processing time for each image: \033[0m" , np.mean(runtime))

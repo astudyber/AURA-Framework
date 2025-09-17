@@ -1,0 +1,7 @@
+ % Dataset 1 Download: https://huggingface.co/datasets/marcosv/rgb2raw
+ % RGB2RAW: iPhoneX, SamsungS9, Samsung21 3K photos
+ % Dataset 2 Download: https://github.com/igor-morawski/RAW-NOD
+ % RAW-NOD: Sony RX100 VII and Nikon D750 7K
+ % Dataset 3 Downloads: https://people.ee.ethz.ch/  ~%cb%9cihnatova/pynet.html
+Huawei P20: Replacing Mobile Camera ISP with a Single Deep Learning Model
+ %
