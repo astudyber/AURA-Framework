@@ -8,5 +8,5 @@ glob2==0.7
 tqdm==4.6.0 
 pathlib==1.0.1 
 argparse==1.6.1
-piqa
 tqdm
+piqa
