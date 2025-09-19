@@ -7,7 +7,7 @@ from torch.utils.data import DataLoader
 from torch.utils.data import Dataset
  
 
-PATH = f'.'
+PATH = f'.' 
 def get_filenames(path):
     test = glob(path + '*.png')
     return test
