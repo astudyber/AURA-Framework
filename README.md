@@ -22,8 +22,8 @@ This is the official repository for **AURA**.
 
 ## :bulb: Inverse ISP in YCbCr  color space
 
+* **Inverse ISP**: Can be applied to image restoration, denoising, and super-resolution.
 * 🚩  We propose AURA, a parameter-agnostic inverse ISP framework leveraging **YCbCr** perceptual decoupling for cross-device generalization. 
-
 * 🚩  We design a **CSP module** performing multi-dimensional residual fusion to recover lost ISP details. 
 * 🚩  We introduce a **noise-aware composite loss** enforcing stronger constraints on difficult regions for higher-fidelity RAW reconstruction. 
 
