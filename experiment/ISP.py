@@ -38,7 +38,6 @@ torch.backends.cudnn.deterministic = True
 #-------------------------------------------------------------------------------------------------!!!
 device = torch.device("cuda:1")
 
-
 # Check https://github.com/mv-lab/AISP/utils.py for more utils for RAW image manipulation.
 
 def load_img(filename, debug=False, norm=True, resize=None):
