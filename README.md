@@ -18,8 +18,6 @@ This is the official repository for **AURA**.
 
 
 
-
-
 ## :bulb: Inverse ISP in YCbCr  color space
 
 * **Inverse ISP**: Can be applied to image restoration, denoising, and super-resolution.
