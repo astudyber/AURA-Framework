@@ -35,6 +35,7 @@ from torch.optim import Adam
 
 torch.backends.cudnn.deterministic = True
 
+
 #-------------------------------------------------------------------------------------------------!!!
 device = torch.device("cuda:2")
 

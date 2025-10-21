@@ -6,7 +6,7 @@ from model import *
 from tqdm import tqdm
 from pathlib import Path
  
- 
+
 def get_opts(known=False):
     # 1. init opts
     opts = argparse.ArgumentParser()
